@@ -41,14 +41,23 @@ public class MainTest {
 //                )
 //        );
 
+//        List<String> links = new ArrayList<>(
+//                List.of(
+//                        "https://www.bakuelectronics.az/catalog/telefonlar-qadcetler/qulaqliqlar/redmi-buds-5-white.html",
+//                        "https://www.bakuelectronics.az/catalog/telefonlar-qadcetler/smart-saatlar/galaxy-watch-6-classic-47mm-black.html"
+//                )
+//        );
+
+
         List<String> links = new ArrayList<>(
                 List.of(
-                        "https://www.bakuelectronics.az/catalog/telefonlar-qadcetler/qulaqliqlar/redmi-buds-5-white.html",
-                        "https://www.bakuelectronics.az/catalog/telefonlar-qadcetler/smart-saatlar/galaxy-watch-6-classic-47mm-black.html"
+                        "https://bazarstore.az/products/doymak-un-2-kq?_pos=1&_fid=e1f07ee49&_ss=c",
+                        "https://bazarstore.az/products/bi%CC%87zi%CC%87m-tarla-zogal-kompotu-1-lt?pr_prod_strat=jac&pr_rec_id=720540daa&pr_rec_pid=8564540113201&pr_ref_pid=8611072049457&pr_seq=uniform"
+
                 )
         );
 
-        LocalStore bakuE = LocalStoreCreator.creator(LocalStoreEnum.BAKUELECTRONICS_AZ, links);
+        LocalStore bakuE = LocalStoreCreator.creator(LocalStoreEnum.BAZARSTORE_AZ, links);
 
 
         for(StoreResponseDto response: bakuE.response())
