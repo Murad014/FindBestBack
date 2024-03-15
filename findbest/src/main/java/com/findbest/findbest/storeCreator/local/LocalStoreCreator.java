@@ -20,6 +20,9 @@ public class LocalStoreCreator {
             case BAKUELECTRONICS_AZ -> {
                 return new BakuElectronicsAz(links);
             }
+            case BAZARSTORE_AZ -> {
+                return new BazarStoreAz(links);
+            }
         }
 
         throw new StoreNotFoundException(localStoreEnum.toString());
