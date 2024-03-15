@@ -41,7 +41,7 @@ public class MainTest {
                 )
         );
 
-        LocalStore bakuE = LocalStoreCreator.creator(LocalStoreEnum.BAKUELECTRONICS_AZ, links);
+        LocalStore bakuE = LocalStoreCreator.creator(LocalStoreEnum.UMICO_AZ, links);
 
 
         for(StoreResponseDto response: bakuE.response())

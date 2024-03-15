@@ -11,7 +11,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class BakuElectronicsAz extends LocalStore{
+public class UmicoAz extends LocalStore{
 
     private final List<String> links;
     private final List<StoreResponseDto> responseDtoList = new ArrayList<>();
@@ -21,11 +21,11 @@ public class BakuElectronicsAz extends LocalStore{
     private final static String DISCOUNT_PRICE_ELEMENT_KEY =
             ".TimerProduct span span span[data-info=item-desc-price-new]";
     private final static String PRODUCT_NAME_ELEMENT_KEY = ".MPProductMainDesc h1[itemprop=name]";
-    private final static String STORE_NAME = "BakuElectronicsAz";
+    private final static String STORE_NAME = "UmicoAz";
 
 
 
-    public BakuElectronicsAz(List<String> links){
+    public UmicoAz(List<String> links){
         this.links = List.copyOf(links);
         getInformationAndSet();
     }

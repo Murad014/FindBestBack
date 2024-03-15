@@ -13,8 +13,8 @@ public class LocalStoreCreator {
             case KONTAKT_AZ:
                 return new KontaktAz(links);
 
-            case BAKUELECTRONICS_AZ:
-                return new BakuElectronicsAz(links);
+            case UMICO_AZ:
+                return new UmicoAz(links);
 
 
 
