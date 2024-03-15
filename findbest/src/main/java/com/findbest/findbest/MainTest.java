@@ -19,19 +19,32 @@ import static com.findbest.findbest.repository.BingWebSearchRepository.SearchWeb
 public class MainTest {
     public static void main(String... args){
 
+//        List<String> links = new ArrayList<>(
+//                List.of(
+//                        "https://kontakt.az/az/iphone-15-pro-512-gb-blue",
+//                        "https://kontakt.az/az/qulaqliq-urbanista-san-francisco-dark-clown-18535",
+//                        "https://kontakt.az/az/tozsoran-ucun-basliq-karcher-drill-dust-catcher-2-863-234-0",
+//                        "https://kontakt.az/az/tozsoran-ucun-firca-karcher-2-863-022-0"
+//                )
+//        );
+//
+//        LocalStore kontakt = LocalStoreCreator.creator(LocalStoreEnum.KONTAKT_AZ, links);
+//
+//
+
+
+
         List<String> links = new ArrayList<>(
                 List.of(
-                        "https://kontakt.az/az/iphone-15-pro-512-gb-blue",
-                        "https://kontakt.az/az/qulaqliq-urbanista-san-francisco-dark-clown-18535",
-                        "https://kontakt.az/az/tozsoran-ucun-basliq-karcher-drill-dust-catcher-2-863-234-0",
-                        "https://kontakt.az/az/tozsoran-ucun-firca-karcher-2-863-022-0"
+                        "https://umico.az/product/376366-qrafik-planshet-vinsa-10-black",
+                        "https://umico.az/product/595849-planshet-xiaomi-pad-6-8gb-256gb-gravity-gray-eu-23043rp34g"
                 )
         );
 
-        LocalStore kontakt = LocalStoreCreator.creator(LocalStoreEnum.KONTAKT_AZ, links);
+        LocalStore bakuE = LocalStoreCreator.creator(LocalStoreEnum.BAKUELECTRONICS_AZ, links);
 
 
-        for(StoreResponseDto response: kontakt.response())
+        for(StoreResponseDto response: bakuE.response())
             System.out.println(response);
     }
 

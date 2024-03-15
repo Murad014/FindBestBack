@@ -31,8 +31,8 @@ public class KontaktAz extends LocalStore{
         links.forEach(link -> {
             try {
                 Document doc = Jsoup.connect(link).get();
-                String getProductName = getProductNameElement(doc);
-                String getPriceElement = getPriceElement(doc);
+                String getProductName = getProductNameElement(doc, link);
+                String getPriceElement = getPriceElement(doc, link);
 
                 StoreResponseDto responseDto = setResponseDto(
                         getPriceElement,
@@ -54,20 +54,19 @@ public class KontaktAz extends LocalStore{
     }
 
 
-//    PRIVATE METHODS
-    private String getPriceElement(Document doc){
+//    Helper METHODS
+    private String getPriceElement(Document doc, String link){
         Element priceElement = doc.selectFirst(PRICE_ELEMENT_KEY);
         if(priceElement == null)
-            throw new FieldNotFoundInStoreHTMLException(STORE_NAME, "price");
+            throw new FieldNotFoundInStoreHTMLException(link, STORE_NAME, "price");
 
-        String purePrice = priceElement.text().trim().split(" ")[0]; // For delete last manat symbol
-        return purePrice;
+        return priceElement.text().trim().split(" ")[0];
     }
 
-    private String getProductNameElement(Document doc){
+    private String getProductNameElement(Document doc, String link){
         Element productNameElement = doc.selectFirst(PRODUCT_NAME_ELEMENT_KEY);
         if(productNameElement == null)
-            throw new FieldNotFoundInStoreHTMLException(STORE_NAME, "productName");
+            throw new FieldNotFoundInStoreHTMLException(link, STORE_NAME, "productName");
 
         return productNameElement.text().trim();
     }
@@ -82,5 +81,5 @@ public class KontaktAz extends LocalStore{
 
         return responseDto;
     }
-//    END - PRIVATE METHODS
+//    END - Helper METHODS
 }

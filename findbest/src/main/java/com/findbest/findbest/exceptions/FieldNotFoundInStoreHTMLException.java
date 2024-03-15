@@ -10,9 +10,11 @@ import org.springframework.web.bind.annotation.ResponseStatus;
 public class FieldNotFoundInStoreHTMLException extends RuntimeException{
     private final String resourceName;
     private final String fieldName;
+    private final String resourceLink;
 
-    public FieldNotFoundInStoreHTMLException(String resourceName, String fieldName) {
-        super(String.format("%s not found with %s : %s", resourceName, fieldName));
+    public FieldNotFoundInStoreHTMLException(String resourceLink, String resourceName, String fieldName) {
+        super(String.format("%s not found with %s : %s", resourceLink, resourceName, fieldName));
+        this.resourceLink = resourceLink;
         this.resourceName = resourceName;
         this.fieldName = fieldName;
     }
