@@ -34,14 +34,21 @@ public class MainTest {
 
 
 
+//        List<String> links = new ArrayList<>(
+//                List.of(
+//                        "https://umico.az/product/376366-qrafik-planshet-vinsa-10-black",
+//                        "https://umico.az/product/595849-planshet-xiaomi-pad-6-8gb-256gb-gravity-gray-eu-23043rp34g"
+//                )
+//        );
+
         List<String> links = new ArrayList<>(
                 List.of(
-                        "https://umico.az/product/376366-qrafik-planshet-vinsa-10-black",
-                        "https://umico.az/product/595849-planshet-xiaomi-pad-6-8gb-256gb-gravity-gray-eu-23043rp34g"
+                        "https://www.bakuelectronics.az/catalog/telefonlar-qadcetler/qulaqliqlar/redmi-buds-5-white.html",
+                        "https://www.bakuelectronics.az/catalog/telefonlar-qadcetler/smart-saatlar/galaxy-watch-6-classic-47mm-black.html"
                 )
         );
 
-        LocalStore bakuE = LocalStoreCreator.creator(LocalStoreEnum.UMICO_AZ, links);
+        LocalStore bakuE = LocalStoreCreator.creator(LocalStoreEnum.BAKUELECTRONICS_AZ, links);
 
 
         for(StoreResponseDto response: bakuE.response())
