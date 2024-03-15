@@ -18,11 +18,11 @@ public class BakuElectronicsAz extends LocalStore{
 
     private final static String PRICE_ELEMENT_KEY = ".product__price--cur";
     private final static String PRODUCT_NAME_ELEMENT_KEY = ".product__heading_desk h1";
-    private final static String STORE_NAME = "BakuElectronicsAz";
 
 
 
     public BakuElectronicsAz(List<String> links){
+        super("BakuElectronicsAz");
         this.links = List.copyOf(links);
         getInformationAndSet();
     }
@@ -35,6 +35,7 @@ public class BakuElectronicsAz extends LocalStore{
                 String getPriceElement = getPriceElement(doc, link);
 
                 StoreResponseDto responseDto = setResponseDto(
+                        link,
                         getPriceElement,
                         getProductName,
                         CurrencyEnum.AZN
@@ -71,15 +72,6 @@ public class BakuElectronicsAz extends LocalStore{
         return productNameElement.text().trim();
     }
 
-    private StoreResponseDto setResponseDto(String price, String productName, CurrencyEnum currency){
-        StoreResponseDto responseDto = new StoreResponseDto();
 
-        responseDto.setStoreName(STORE_NAME);
-        responseDto.setProductName(productName);
-        responseDto.setPrice(price);
-        responseDto.setCurrencyEnum(currency);
-
-        return responseDto;
-    }
 //    END - Helper METHODS
 }

@@ -21,11 +21,12 @@ public class UmicoAz extends LocalStore{
     private final static String DISCOUNT_PRICE_ELEMENT_KEY =
             ".TimerProduct span span span[data-info=item-desc-price-new]";
     private final static String PRODUCT_NAME_ELEMENT_KEY = ".MPProductMainDesc h1[itemprop=name]";
-    private final static String STORE_NAME = "UmicoAz";
 
 
 
     public UmicoAz(List<String> links){
+        super("UmicoAz");
+
         this.links = List.copyOf(links);
         getInformationAndSet();
     }
@@ -38,6 +39,7 @@ public class UmicoAz extends LocalStore{
                 String getPriceElement = getPriceElement(doc, link);
 
                 StoreResponseDto responseDto = setResponseDto(
+                        link,
                         getPriceElement,
                         getProductName,
                         CurrencyEnum.AZN
@@ -80,15 +82,5 @@ public class UmicoAz extends LocalStore{
         return productNameElement.text().trim();
     }
 
-    private StoreResponseDto setResponseDto(String price, String productName, CurrencyEnum currency){
-        StoreResponseDto responseDto = new StoreResponseDto();
-
-        responseDto.setStoreName(STORE_NAME);
-        responseDto.setProductName(productName);
-        responseDto.setPrice(price);
-        responseDto.setCurrencyEnum(currency);
-
-        return responseDto;
-    }
 //    END - Helper METHODS
 }

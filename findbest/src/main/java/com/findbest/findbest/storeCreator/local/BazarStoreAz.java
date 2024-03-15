@@ -18,11 +18,11 @@ public class BazarStoreAz extends LocalStore{
 
     private final static String PRICE_ELEMENT_KEY = ".price-item--sale";
     private final static String PRODUCT_NAME_ELEMENT_KEY = ".product__title";
-    private final static String STORE_NAME = "BazarStoreAz";
 
 
 
     public BazarStoreAz(List<String> links){
+        super("BazarStoreAz");
         this.links = List.copyOf(links);
         getInformationAndSet();
     }
@@ -35,6 +35,7 @@ public class BazarStoreAz extends LocalStore{
                 String getPriceElement = getPriceElement(doc, link);
 
                 StoreResponseDto responseDto = setResponseDto(
+                        link,
                         getPriceElement,
                         getProductName,
                         CurrencyEnum.AZN
@@ -71,15 +72,6 @@ public class BazarStoreAz extends LocalStore{
         return productNameElement.text().trim();
     }
 
-    private StoreResponseDto setResponseDto(String price, String productName, CurrencyEnum currency){
-        StoreResponseDto responseDto = new StoreResponseDto();
 
-        responseDto.setStoreName(STORE_NAME);
-        responseDto.setProductName(productName);
-        responseDto.setPrice(price);
-        responseDto.setCurrencyEnum(currency);
-
-        return responseDto;
-    }
 //    END - Helper METHODS
 }

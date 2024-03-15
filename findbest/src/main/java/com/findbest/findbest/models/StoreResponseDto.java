@@ -13,6 +13,7 @@ import java.math.BigDecimal;
 public class StoreResponseDto {
 
     private String storeName;
+    private String link;
     private String productName;
     private String price;
     private CurrencyEnum currencyEnum;
