@@ -64,6 +64,15 @@ public class StoreAndLinks {
                 )
         );
 
+        storeAndLinks.put(
+                LocalStoreEnum.UNIMALL_AZ,
+                List.of(
+                        "https://unimall.az/maybelline-mascara/",
+                        "https://unimall.az/planset-lenovo-ideapad-flex-15-81ca001sus/"
+
+                )
+        );
+
 
         return storeAndLinks;
     }
