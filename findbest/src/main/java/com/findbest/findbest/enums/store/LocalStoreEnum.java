@@ -1,21 +1,20 @@
 package com.findbest.findbest.enums.store;
 
 public enum LocalStoreEnum {
+//    MAXI_AZ,
+
     KONTAKT_AZ,
     BAKUELECTRONICS_AZ,
     UMICO_AZ,
     BAZARSTORE_AZ,
     AZ_ORIFLAME_COM,
     ALININO_AZ,
-
-//    MAXI_AZ,
     UNIMALL_AZ,
-
-
-
     COMPSTORE_AZ,
-    DOCTORTAP_AZ,
+
     MGSTORE_AZ,
+
+
     KITABEVIM_AZ,
     BAKENROLL_AZ,
     ALMALI_STORE,

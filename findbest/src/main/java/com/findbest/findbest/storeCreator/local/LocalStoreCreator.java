@@ -32,6 +32,13 @@ public class LocalStoreCreator {
             case UNIMALL_AZ -> {
                 return new UnimallAz(links);
             }
+            case COMPSTORE_AZ -> {
+                return new CompstoreAz(links);
+            }
+            case MGSTORE_AZ -> {
+                return new MgStoreAz(links);
+            }
+
         }
 
         throw new StoreNotFoundException(localStoreEnum.toString());
