@@ -4,6 +4,7 @@ import com.findbest.findbest.enums.store.CurrencyEnum;
 import com.findbest.findbest.models.StoreResponseDto;
 
 import java.util.List;
+import java.util.Set;
 
 public abstract class LocalStore {
 
@@ -14,7 +15,12 @@ public abstract class LocalStore {
         this.STORE_NAME = STORE_NAME;
     }
 
-    StoreResponseDto setResponseDto(String link, String price, String productName, CurrencyEnum currency){
+    StoreResponseDto setResponseDto(String link,
+                                    String price,
+                                    String productName,
+                                    CurrencyEnum currency,
+                                    Set<String> images
+    ){
         StoreResponseDto responseDto = new StoreResponseDto();
 
         responseDto.setStoreName(STORE_NAME);
@@ -22,6 +28,7 @@ public abstract class LocalStore {
         responseDto.setPrice(price);
         responseDto.setCurrencyEnum(currency);
         responseDto.setLink(link);
+        responseDto.setImages(images);
 
         return responseDto;
     }

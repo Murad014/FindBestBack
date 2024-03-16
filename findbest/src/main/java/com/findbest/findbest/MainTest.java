@@ -18,7 +18,7 @@ import java.util.*;
 import static com.findbest.findbest.repository.BingWebSearchRepository.SearchWeb;
 public class MainTest {
     public static void main(String... args){
-
+//
 //        List<String> links = new ArrayList<>(
 //                List.of(
 //                        "https://kontakt.az/az/iphone-15-pro-512-gb-blue",
@@ -27,10 +27,8 @@ public class MainTest {
 //                        "https://kontakt.az/az/tozsoran-ucun-firca-karcher-2-863-022-0"
 //                )
 //        );
-//
+
 //        LocalStore kontakt = LocalStoreCreator.creator(LocalStoreEnum.KONTAKT_AZ, links);
-//
-//
 
 
 
@@ -49,15 +47,23 @@ public class MainTest {
 //        );
 
 
+//        List<String> links = new ArrayList<>(
+//                List.of(
+//                        "https://bazarstore.az/products/doymak-un-2-kq?_pos=1&_fid=e1f07ee49&_ss=c",
+//                        "https://bazarstore.az/products/bi%CC%87zi%CC%87m-tarla-zogal-kompotu-1-lt?pr_prod_strat=jac&pr_rec_id=720540daa&pr_rec_pid=8564540113201&pr_ref_pid=8611072049457&pr_seq=uniform"
+//
+//                )
+//        );
+
         List<String> links = new ArrayList<>(
                 List.of(
-                        "https://bazarstore.az/products/doymak-un-2-kq?_pos=1&_fid=e1f07ee49&_ss=c",
-                        "https://bazarstore.az/products/bi%CC%87zi%CC%87m-tarla-zogal-kompotu-1-lt?pr_prod_strat=jac&pr_rec_id=720540daa&pr_rec_pid=8564540113201&pr_ref_pid=8611072049457&pr_seq=uniform"
+                        "https://az.oriflame.com/products/product?code=46062",
+                        "https://az.oriflame.com/products/product?code=47193"
 
                 )
         );
 
-        LocalStore bakuE = LocalStoreCreator.creator(LocalStoreEnum.BAZARSTORE_AZ, links);
+        LocalStore bakuE = LocalStoreCreator.creator(LocalStoreEnum.AZ_ORIFLAME_COM, links);
 
 
         for(StoreResponseDto response: bakuE.response())

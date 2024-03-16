@@ -6,10 +6,13 @@ import com.findbest.findbest.models.StoreResponseDto;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
+import org.jsoup.select.Elements;
 
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 public class KontaktAz extends LocalStore{
 
@@ -18,6 +21,7 @@ public class KontaktAz extends LocalStore{
 
     private final static String PRICE_ELEMENT_KEY = ".prodCart__prices strong span";
     private final static String PRODUCT_NAME_ELEMENT_KEY = ".page-title span[itemprop=name]";
+    private final static String PRODUCT_PICTURE_KEY = "a.item.swiper-slide";
 
 
 
@@ -27,18 +31,26 @@ public class KontaktAz extends LocalStore{
         getInformationAndSet();
     }
 
+
+    @Override
+    public List<StoreResponseDto> response() {
+        return responseDtoList;
+    }
+
     private void getInformationAndSet(){
         links.forEach(link -> {
             try {
                 Document doc = Jsoup.connect(link).get();
                 String getProductName = getProductNameElement(doc, link);
                 String getPriceElement = getPriceElement(doc, link);
+                Set<String> getPictures = getProductImages(doc, link);
 
                 StoreResponseDto responseDto = setResponseDto(
                         link,
                         getPriceElement,
                         getProductName,
-                        CurrencyEnum.AZN
+                        CurrencyEnum.AZN,
+                        getPictures
                 );
                 responseDtoList.add(responseDto);
 
@@ -48,14 +60,18 @@ public class KontaktAz extends LocalStore{
         });
     }
 
+//    Helper METHODS
+    private Set<String> getProductImages(Document doc, String link) {
+        Elements links = doc.select(PRODUCT_PICTURE_KEY);
+        Set<String> hrefList = new HashSet<>();
+        for (Element srcLink : links) {
+            String href = srcLink.attr("href");
+            hrefList.add(href);
+        }
 
-    @Override
-    public List<StoreResponseDto> response() {
-        return responseDtoList;
+        return hrefList;
     }
 
-
-//    Helper METHODS
     private String getPriceElement(Document doc, String link){
         Element priceElement = doc.selectFirst(PRICE_ELEMENT_KEY);
         if(priceElement == null)
