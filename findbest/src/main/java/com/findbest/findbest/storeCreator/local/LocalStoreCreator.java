@@ -23,6 +23,9 @@ public class LocalStoreCreator {
             case BAZARSTORE_AZ -> {
                 return new BazarStoreAz(links);
             }
+            case AZ_ORIFLAME_COM -> {
+                return new AzOriflameCom(links);
+            }
         }
 
         throw new StoreNotFoundException(localStoreEnum.toString());

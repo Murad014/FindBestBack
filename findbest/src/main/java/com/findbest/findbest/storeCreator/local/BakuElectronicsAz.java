@@ -6,10 +6,13 @@ import com.findbest.findbest.models.StoreResponseDto;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
+import org.jsoup.select.Elements;
 
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 public class BakuElectronicsAz extends LocalStore{
 
@@ -18,6 +21,7 @@ public class BakuElectronicsAz extends LocalStore{
 
     private final static String PRICE_ELEMENT_KEY = ".product__price--cur";
     private final static String PRODUCT_NAME_ELEMENT_KEY = ".product__heading_desk h1";
+    private final static String PRODUCT_PICTURE_KEY = "a.gallery__main-link";
 
 
 
@@ -33,12 +37,14 @@ public class BakuElectronicsAz extends LocalStore{
                 Document doc = Jsoup.connect(link).get();
                 String getProductName = getProductNameElement(doc, link);
                 String getPriceElement = getPriceElement(doc, link);
+                Set<String> getProductImages = getProductImages(doc, link);
 
                 StoreResponseDto responseDto = setResponseDto(
                         link,
                         getPriceElement,
                         getProductName,
-                        CurrencyEnum.AZN
+                        CurrencyEnum.AZN,
+                        getProductImages
                 );
                 responseDtoList.add(responseDto);
 
@@ -55,7 +61,20 @@ public class BakuElectronicsAz extends LocalStore{
     }
 
 
+
     //    Helper METHODS
+    private Set<String> getProductImages(Document doc, String link) {;
+        Elements links = doc.select(PRODUCT_PICTURE_KEY);
+        Set<String> srcList = new HashSet<>();
+
+        for (Element srcLink : links) {
+            String src = srcLink.select("img").attr("src");
+            srcList.add(pureLink(src));
+        }
+
+        return srcList;
+    }
+
     private String getPriceElement(Document doc, String link){
         Element priceElement = doc.selectFirst(PRICE_ELEMENT_KEY);
         if(priceElement == null)
@@ -70,6 +89,10 @@ public class BakuElectronicsAz extends LocalStore{
             throw new FieldNotFoundInStoreHTMLException(link, STORE_NAME, "productName");
 
         return productNameElement.text().trim();
+    }
+
+    private String pureLink(String link){
+        return "https://bakuelectronics.az/" + link;
     }
 
 

@@ -6,10 +6,13 @@ import com.findbest.findbest.models.StoreResponseDto;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
+import org.jsoup.select.Elements;
 
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 public class BazarStoreAz extends LocalStore{
 
@@ -18,11 +21,13 @@ public class BazarStoreAz extends LocalStore{
 
     private final static String PRICE_ELEMENT_KEY = ".price-item--sale";
     private final static String PRODUCT_NAME_ELEMENT_KEY = ".product__title";
+    private final static String PRODUCT_PICTURE_KEY = "a#zoom1";
 
 
 
     public BazarStoreAz(List<String> links){
         super("BazarStoreAz");
+
         this.links = List.copyOf(links);
         getInformationAndSet();
     }
@@ -33,12 +38,14 @@ public class BazarStoreAz extends LocalStore{
                 Document doc = Jsoup.connect(link).get();
                 String getProductName = getProductNameElement(doc, link);
                 String getPriceElement = getPriceElement(doc, link);
+                Set<String> images = getProductImages(doc, link);
 
                 StoreResponseDto responseDto = setResponseDto(
                         link,
                         getPriceElement,
                         getProductName,
-                        CurrencyEnum.AZN
+                        CurrencyEnum.AZN,
+                        images
                 );
                 responseDtoList.add(responseDto);
 
@@ -56,6 +63,26 @@ public class BazarStoreAz extends LocalStore{
 
 
     //    Helper METHODS
+
+    private Set<String> getProductImages(Document doc, String link) {
+        Elements links = doc.select(PRODUCT_PICTURE_KEY);
+        Set<String> hrefList = new HashSet<>();
+        for (Element srcLink : links) {
+            String href = srcLink.attr("href");
+            hrefList.add(
+                    pureLink(href)
+            );
+        }
+
+        return hrefList;
+    }
+
+    private String pureLink(String href) {
+        return "https://".concat(
+                href.substring(2)
+        );
+    }
+
     private String getPriceElement(Document doc, String link){
         Element priceElement = doc.selectFirst(PRICE_ELEMENT_KEY);
         if(priceElement == null)
@@ -71,7 +98,6 @@ public class BazarStoreAz extends LocalStore{
 
         return productNameElement.text().trim();
     }
-
-
 //    END - Helper METHODS
+
 }

@@ -35,7 +35,7 @@ public class BingWebSearchRepository {
                 paramsStr
         );
 
-        System.out.println("TEST: " + url);
+
 
         HttpsURLConnection connection = (HttpsURLConnection)url.openConnection();
         connection.setRequestProperty("Ocp-Apim-Subscription-Key", subscriptionKey);
