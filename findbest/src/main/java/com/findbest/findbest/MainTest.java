@@ -78,16 +78,32 @@ public class MainTest {
 //                )
 //        );
 
+//        List<String> links = new ArrayList<>(
+//                List.of(
+//                        "https://unimall.az/maybelline-mascara/",
+//                        "https://unimall.az/planset-lenovo-ideapad-flex-15-81ca001sus/",
+//                        "https://unimall.az/iphone-12-64gb-black/"
+//
+//                )
+//        );
+
+//        List<String> links = new ArrayList<>(
+//                List.of(
+//                        "https://compstore.az/monoblok-lenovo-ideacentre-aio-3i-24iil5-f0fr002qrk.html",
+//                        "https://compstore.az/asrock-b660m-hdv-mainboard.html"
+//
+//                )
+//        );
+
         List<String> links = new ArrayList<>(
                 List.of(
-                        "https://unimall.az/maybelline-mascara/",
-                        "https://unimall.az/planset-lenovo-ideapad-flex-15-81ca001sus/",
-                        "https://unimall.az/iphone-12-64gb-black/"
+                        "https://www.mgstore.az/motorola-razr-40-ultra-8-256gb-infinite-black",
+                        "https://www.mgstore.az/blender-philips-hr1393-00-2-2058"
 
                 )
         );
 
-        LocalStore bakuE = LocalStoreCreator.creator(LocalStoreEnum.UNIMALL_AZ, links);
+        LocalStore bakuE = LocalStoreCreator.creator(LocalStoreEnum.MGSTORE_AZ, links);
 
 
         for(StoreResponseDto response: bakuE.response())

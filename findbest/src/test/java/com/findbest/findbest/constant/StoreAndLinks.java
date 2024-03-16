@@ -73,6 +73,24 @@ public class StoreAndLinks {
                 )
         );
 
+        storeAndLinks.put(
+                LocalStoreEnum.COMPSTORE_AZ,
+                List.of(
+                        "https://compstore.az/monoblok-lenovo-ideacentre-aio-3i-24iil5-f0fr002qrk.html",
+                        "https://compstore.az/asrock-b660m-hdv-mainboard.html"
+
+                )
+        );
+
+        storeAndLinks.put(
+                LocalStoreEnum.MGSTORE_AZ,
+                List.of(
+                        "https://www.mgstore.az/motorola-razr-40-ultra-8-256gb-infinite-black",
+                        "https://www.mgstore.az/blender-philips-hr1393-00-2-2058"
+
+                )
+        );
+
 
         return storeAndLinks;
     }
