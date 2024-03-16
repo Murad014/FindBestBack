@@ -6,10 +6,13 @@ public enum LocalStoreEnum {
     UMICO_AZ,
     BAZARSTORE_AZ,
     AZ_ORIFLAME_COM,
-
     ALININO_AZ,
-    MAXI_AZ,
+
+//    MAXI_AZ,
     UNIMALL_AZ,
+
+
+
     COMPSTORE_AZ,
     DOCTORTAP_AZ,
     MGSTORE_AZ,

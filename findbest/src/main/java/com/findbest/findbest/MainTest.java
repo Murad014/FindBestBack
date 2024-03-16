@@ -55,15 +55,39 @@ public class MainTest {
 //                )
 //        );
 
+//        List<String> links = new ArrayList<>(
+//                List.of(
+//                        "https://az.oriflame.com/products/product?code=46062",
+//                        "https://az.oriflame.com/products/product?code=47193"
+//
+//                )
+//        );
+
+//        List<String> links = new ArrayList<>(
+//                List.of(
+//                        "https://alinino.az/product/nergiz-gulu?lang=en",
+//                        "https://alinino.az/product/1984-7e8af2?lang=en"
+//
+//                )
+//        );
+
+//        List<String> links = new ArrayList<>(
+//                List.of(
+//                        "https://maxi.az/telefonlar-ve-plansetler/telefonlar/smartfonlar/xiaomi-redmi-12-nfc-4gb-128gb-silver/"
+//
+//                )
+//        );
+
         List<String> links = new ArrayList<>(
                 List.of(
-                        "https://az.oriflame.com/products/product?code=46062",
-                        "https://az.oriflame.com/products/product?code=47193"
+                        "https://unimall.az/maybelline-mascara/",
+                        "https://unimall.az/planset-lenovo-ideapad-flex-15-81ca001sus/",
+                        "https://unimall.az/iphone-12-64gb-black/"
 
                 )
         );
 
-        LocalStore bakuE = LocalStoreCreator.creator(LocalStoreEnum.AZ_ORIFLAME_COM, links);
+        LocalStore bakuE = LocalStoreCreator.creator(LocalStoreEnum.UNIMALL_AZ, links);
 
 
         for(StoreResponseDto response: bakuE.response())

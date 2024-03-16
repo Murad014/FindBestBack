@@ -55,6 +55,15 @@ public class StoreAndLinks {
                         "https://az.oriflame.com/products/product?code=47193"                )
         );
 
+        storeAndLinks.put(
+                LocalStoreEnum.ALININO_AZ,
+                List.of(
+                        "https://alinino.az/product/nergiz-gulu?lang=en",
+                        "https://alinino.az/product/1984-7e8af2?lang=en"
+
+                )
+        );
+
 
         return storeAndLinks;
     }
