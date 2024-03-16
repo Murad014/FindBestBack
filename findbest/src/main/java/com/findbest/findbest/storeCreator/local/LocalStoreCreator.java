@@ -26,6 +26,12 @@ public class LocalStoreCreator {
             case AZ_ORIFLAME_COM -> {
                 return new AzOriflameCom(links);
             }
+            case ALININO_AZ -> {
+                return new AlininoAz(links);
+            }
+            case UNIMALL_AZ -> {
+                return new UnimallAz(links);
+            }
         }
 
         throw new StoreNotFoundException(localStoreEnum.toString());
