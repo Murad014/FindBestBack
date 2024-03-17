@@ -3,6 +3,7 @@ package com.findbest.findbest.enums.store;
 public enum LocalStoreEnum {
 //    MAXI_AZ, -- Cannot fetched by JSOUP
 // BAKENROLL_AZ, -- 500 INTERNAL SERVER ERROR
+//FLOSTORE_AZ, -- 404 NOT FOUND
 
     KONTAKT_AZ,
     BAKUELECTRONICS_AZ,
@@ -14,25 +15,19 @@ public enum LocalStoreEnum {
     COMPSTORE_AZ,
     MGSTORE_AZ,
     KITABEVIM_AZ,
-
     ALMALI_AZ,
     NEPTUN_AZ,
-
-
     OMID_AZ,
-    WEISLAM_AZ,
     BAKUBOOKCENTER_AZ,
-
-
     EMBAWOOD_AZ,
-    FLOSTORE_AZ,
 
 
     SANTRAL_AZ,
     ITICKET_AZ,
+
+
+
     YVESROCHER_AZ,
-
-
     UNITEDSPORT_AZ,
     RADIUS_AZ,
     BODYCARE_AZ,

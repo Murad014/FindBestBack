@@ -47,6 +47,15 @@ public class LocalStoreCreator {
             case NEPTUN_AZ -> {
                 return new NeptunAz(links);
             }
+            case OMID_AZ -> {
+                return new OmidAz(links);
+            }
+            case BAKUBOOKCENTER_AZ -> {
+                return new BakuBookCenter(links);
+            }
+            case EMBAWOOD_AZ -> {
+                return new EmbawoodAz(links);
+            }
         }
 
         throw new StoreNotFoundException(localStoreEnum.toString());
