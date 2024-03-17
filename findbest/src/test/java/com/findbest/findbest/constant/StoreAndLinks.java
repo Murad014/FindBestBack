@@ -117,6 +117,29 @@ public class StoreAndLinks {
                 )
         );
 
+        storeAndLinks.put(
+                LocalStoreEnum.OMID_AZ,
+                List.of(
+                        "https://omid.az/catalog/ehtiyyat_hisseleri/114942/",
+                        "https://omid.az/catalog/maye%20temizleyiciler/116411/"
+                )
+        );
+
+        storeAndLinks.put(
+                LocalStoreEnum.BAKUBOOKCENTER_AZ,
+                List.of(
+                        "https://bakubookcenter.az/product/83189",
+                        "https://bakubookcenter.az/product/83188"
+                )
+        );
+
+        storeAndLinks.put(
+                LocalStoreEnum.EMBAWOOD_AZ,
+                List.of(
+                        "https://embawood.az/qonaq-mebeli/masa-qonaq/cross-mexanizmli-masa",
+                        "https://embawood.az/doshekler/classy-matrass-90-200"
+                )
+        );
 
         return storeAndLinks;
     }

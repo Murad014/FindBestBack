@@ -119,13 +119,29 @@ public class MainTest {
 //                )
 //        );
 
+//        List<String> links = new ArrayList<>(
+//                List.of(
+//                        "https://omid.az/catalog/ehtiyyat_hisseleri/114942/",
+//                        "https://omid.az/catalog/maye%20temizleyiciler/116411/"
+//                )
+//        );
+
+//        List<String> links = new ArrayList<>(
+//                List.of(
+//                        "https://bakubookcenter.az/product/83189",
+//                        "https://bakubookcenter.az/product/83188"
+//                )
+//        );
+
         List<String> links = new ArrayList<>(
                 List.of(
-                        "https://neptun.az/ankara-makaron-burgu-neptun-online-alisveris",
-                        "https://neptun.az/aguafresh-125ml-dis-macunu-otbelivanie-002472"
+                        "https://embawood.az/qonaq-mebeli/masa-qonaq/cross-mexanizmli-masa",
+                        "https://embawood.az/doshekler/classy-matrass-90-200"
                 )
         );
-        LocalStore bakuE = LocalStoreCreator.creator(LocalStoreEnum.NEPTUN_AZ, links);
+
+
+        LocalStore bakuE = LocalStoreCreator.creator(LocalStoreEnum.EMBAWOOD_AZ, links);
 
 
         for(StoreResponseDto response: bakuE.response())
