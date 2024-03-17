@@ -23,15 +23,8 @@ public enum LocalStoreEnum {
     BAKUBOOKCENTER_AZ,
     EMBAWOOD_AZ,
     YVESROCHER_AZ,
-
-
     UNITEDSPORT_AZ,
-
-    RADIUS_AZ,
     BODYCARE_AZ,
-
-
-    ATI_AZ,
     GOSPORT_AZ,
     LIFE_SPORT_AZ,
 
