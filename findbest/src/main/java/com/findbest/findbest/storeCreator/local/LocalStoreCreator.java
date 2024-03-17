@@ -65,6 +65,18 @@ public class LocalStoreCreator {
                 return new UnitedsportAz(links);
             }
 
+            case BODYCARE_AZ -> {
+                return new BodycareAz(links);
+            }
+
+            case GOSPORT_AZ -> {
+                return new GoSportAz(links);
+            }
+
+            case LIFE_SPORT_AZ -> {
+                return new LifeSportAz(links);
+            }
+
         }
 
         throw new StoreNotFoundException(localStoreEnum.toString());

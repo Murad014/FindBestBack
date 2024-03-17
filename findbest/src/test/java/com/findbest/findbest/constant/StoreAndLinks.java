@@ -157,6 +157,30 @@ public class StoreAndLinks {
                 )
         );
 
+        storeAndLinks.put(
+                LocalStoreEnum.BODYCARE_AZ,
+                List.of(
+                        "https://www.bodycare.az/balmy-dirnaq-tutan-regular.html",
+                        "https://www.bodycare.az/farmstay-ilbiz-soku-gez-kremi.html"
+                )
+        );
+
+        storeAndLinks.put(
+                LocalStoreEnum.GOSPORT_AZ,
+                List.of(
+                        "https://gosport.az/az/adidas-own-the-run-kopu-onlu-yungul-god-kc-fl6964",
+                        "https://gosport.az/az/skechers-bobs-bamina-2-qadinlar-ucun-ayaqqabi-117362-wbmt"
+                )
+        );
+
+        storeAndLinks.put(
+                LocalStoreEnum.LIFE_SPORT_AZ,
+                List.of(
+                        "https://life-sport.az/product/az/26/l-arginine-100-kapsul",
+                        "https://life-sport.az/product/az/312/caffeine-kick-60-capsules"
+                )
+        );
+
         return storeAndLinks;
     }
 

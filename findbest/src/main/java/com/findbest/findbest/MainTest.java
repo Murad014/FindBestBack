@@ -154,15 +154,36 @@ public class MainTest {
 //                )
 //        );
 
+//        List<String> links = new ArrayList<>(
+//                List.of(
+//                        "https://unitedsport.az/tights-cas-f038-18932.html",
+//                        "https://unitedsport.az/the-north-face-tanken-raglan-tee-21005.html"
+//                )
+//        );
+
+//        List<String> links = new ArrayList<>(
+//                List.of(
+//                        "https://www.bodycare.az/balmy-dirnaq-tutan-regular.html",
+//                        "https://www.bodycare.az/farmstay-ilbiz-soku-gez-kremi.html"
+//                )
+//        );
+//
+//        List<String> links = new ArrayList<>(
+//                List.of(
+//                        "https://gosport.az/az/adidas-own-the-run-kopu-onlu-yungul-god-kc-fl6964",
+//                        "https://gosport.az/az/skechers-bobs-bamina-2-qadinlar-ucun-ayaqqabi-117362-wbmt"
+//                )
+//        );
+
         List<String> links = new ArrayList<>(
                 List.of(
-                        "https://unitedsport.az/tights-cas-f038-18932.html",
-                        "https://unitedsport.az/the-north-face-tanken-raglan-tee-21005.html"
+                        "https://life-sport.az/product/az/26/l-arginine-100-kapsul",
+                        "https://life-sport.az/product/az/312/caffeine-kick-60-capsules"
                 )
         );
 
 
-        LocalStore bakuE = LocalStoreCreator.creator(LocalStoreEnum.UNITEDSPORT_AZ, links);
+        LocalStore bakuE = LocalStoreCreator.creator(LocalStoreEnum.LIFE_SPORT_AZ, links);
 
 
         for(StoreResponseDto response: bakuE.response())
