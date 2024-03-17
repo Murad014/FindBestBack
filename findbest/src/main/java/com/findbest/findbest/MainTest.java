@@ -133,15 +133,36 @@ public class MainTest {
 //                )
 //        );
 
+//        List<String> links = new ArrayList<>(
+//                List.of(
+//                        "https://embawood.az/qonaq-mebeli/masa-qonaq/cross-mexanizmli-masa",
+//                        "https://embawood.az/doshekler/classy-matrass-90-200"
+//                )
+//        );
+
+//        List<String> links = new ArrayList<>(
+//                List.of(
+//                        "https://santral.az/az/products/sm410-beton-kesen-misar-400mm-cedima-10888/",
+//                        "https://santral.az/az/products/9833-formaveren-gardena-31254"
+//                )
+//        );
+
+//        List<String> links = new ArrayList<>(
+//                List.of(
+//                        "https://www.yvesrocher.az/products/28955",
+//                        "https://www.yvesrocher.az/products/haircare-botanical-solutions-quru-v%C9%99-z%C9%99d%C9%99l%C9%99nmi%CC%87s-saclar-ucun-b%C9%99rpaedi%CC%87ci%CC%87-kondi%CC%87si%CC%87oner-200ml"
+//                )
+//        );
+
         List<String> links = new ArrayList<>(
                 List.of(
-                        "https://embawood.az/qonaq-mebeli/masa-qonaq/cross-mexanizmli-masa",
-                        "https://embawood.az/doshekler/classy-matrass-90-200"
+                        "https://unitedsport.az/tights-cas-f038-18932.html",
+                        "https://unitedsport.az/the-north-face-tanken-raglan-tee-21005.html"
                 )
         );
 
 
-        LocalStore bakuE = LocalStoreCreator.creator(LocalStoreEnum.EMBAWOOD_AZ, links);
+        LocalStore bakuE = LocalStoreCreator.creator(LocalStoreEnum.UNITEDSPORT_AZ, links);
 
 
         for(StoreResponseDto response: bakuE.response())

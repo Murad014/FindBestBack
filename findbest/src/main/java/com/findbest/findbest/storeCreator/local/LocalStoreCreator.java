@@ -56,6 +56,15 @@ public class LocalStoreCreator {
             case EMBAWOOD_AZ -> {
                 return new EmbawoodAz(links);
             }
+
+            case YVESROCHER_AZ -> {
+                return new YvesrocherAz(links);
+            }
+
+            case UNITEDSPORT_AZ -> {
+                return new UnitedsportAz(links);
+            }
+
         }
 
         throw new StoreNotFoundException(localStoreEnum.toString());
