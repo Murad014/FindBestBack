@@ -6,6 +6,10 @@ public enum LocalStoreEnum {
 // FLOSTORE_AZ, -- 404 NOT FOUND
 // ITICKET_AZ, -- REDUNDANT
 // SANTRAL_AZ -- Not render
+// SABAHFC_AZ, -- PRIVATE SITE
+// NEXT_COM_AZ, -- NOT LOCAL (AZERBAIJAN)
+
+
 
     KONTAKT_AZ,
     BAKUELECTRONICS_AZ,
@@ -27,19 +31,17 @@ public enum LocalStoreEnum {
     BODYCARE_AZ,
     GOSPORT_AZ,
     LIFE_SPORT_AZ,
-
-
     SAATSTORE_AZ,
     NOVELLA_AZ,
-    SABAHFC_AZ,
 
 
-    NEXT_COM_AZ,
-    AEM_ELEKTRON_AZ,
+
+
+    val_cat,
     EMSAN_COM_AZ,
-
-
     EVIMIZSTORE_AZ,
+
+
     BIOTUS_AZ,
     MADEYRA_COM,
 

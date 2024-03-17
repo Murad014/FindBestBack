@@ -175,15 +175,21 @@ public class MainTest {
 //                )
 //        );
 
+//        List<String> links = new ArrayList<>(
+//                List.of(
+//                        "https://life-sport.az/product/az/26/l-arginine-100-kapsul",
+//                        "https://life-sport.az/product/az/312/caffeine-kick-60-capsules"
+//                )
+//        );
         List<String> links = new ArrayList<>(
                 List.of(
-                        "https://life-sport.az/product/az/26/l-arginine-100-kapsul",
-                        "https://life-sport.az/product/az/312/caffeine-kick-60-capsules"
+                        "https://novella.az/kitab/boyuk-dordluk",
+                        "https://novella.az/kitab/maliyyenin-esaslari"
                 )
         );
 
 
-        LocalStore bakuE = LocalStoreCreator.creator(LocalStoreEnum.LIFE_SPORT_AZ, links);
+        LocalStore bakuE = LocalStoreCreator.creator(LocalStoreEnum.NOVELLA_AZ, links);
 
 
         for(StoreResponseDto response: bakuE.response())
