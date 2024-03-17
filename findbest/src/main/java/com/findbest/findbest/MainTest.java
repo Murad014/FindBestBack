@@ -181,15 +181,43 @@ public class MainTest {
 //                        "https://life-sport.az/product/az/312/caffeine-kick-60-capsules"
 //                )
 //        );
+//        List<String> links = new ArrayList<>(
+//                List.of(
+//                        "https://novella.az/kitab/boyuk-dordluk",
+//                        "https://novella.az/kitab/maliyyenin-esaslari"
+//                )
+//        );
+
+//        List<String> links = new ArrayList<>(
+//                List.of(
+//                        "https://emsan.com.az/serwant-home-kapitoneli-yastik-5070-ag-p-635bd8df249eb21e1b112246",
+//                        "https://emsan.com.az/homend-cooltouch-1619h-kettle-p-64f829445bba9e5b75911563"
+//                )
+//        );
+
+//        List<String> links = new ArrayList<>(
+//                List.of(
+//                        "https://evimizstore.az/metbex/palermo-saxlama-qabi-500-ml-3-ed-27562",
+//                        "https://evimizstore.az/metbex/saxlama-qabi-sugarspice-neo-luxe-27058"
+//                )
+//        );
+
+//        List<String> links = new ArrayList<>(
+//                List.of(
+//                        "https://biotus.az/az/biotin-biotin-biotus-10000-mkg-100-kapsul.html",
+//                        "https://biotus.az/az/maslo-vechernej-primuly-s-glk-evening-primrose-oil-puritan-s-pride-500-mg-100-gelevyh-kapsul.html"
+//                )
+//        );
+
         List<String> links = new ArrayList<>(
                 List.of(
-                        "https://novella.az/kitab/boyuk-dordluk",
-                        "https://novella.az/kitab/maliyyenin-esaslari"
+                        "https://madeyra.com/index.php?route=product/product&product_id=835",
+                        "https://madeyra.com/remi-yataq-desti"
                 )
         );
 
 
-        LocalStore bakuE = LocalStoreCreator.creator(LocalStoreEnum.NOVELLA_AZ, links);
+        LocalStore bakuE = LocalStoreCreator.creator(LocalStoreEnum.MADEYRA_COM, links);
 
 
         for(StoreResponseDto response: bakuE.response())

@@ -86,6 +86,22 @@ public class LocalStoreCreator {
                 return new NovellaAz(links);
             }
 
+            case EMSAN_COM_AZ -> {
+                return new EmsanComAz(links);
+            }
+
+            case EVIMIZSTORE_AZ -> {
+                return new EvimizStoreAz(links);
+            }
+
+            case BIOTUS_AZ -> {
+                return new BiotusAz(links);
+            }
+
+            case MADEYRA_COM -> {
+                return new MadeyraCom(links);
+            }
+
         }
 
         throw new StoreNotFoundException(localStoreEnum.toString());
