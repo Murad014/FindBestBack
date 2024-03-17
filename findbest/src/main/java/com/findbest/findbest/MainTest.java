@@ -95,15 +95,37 @@ public class MainTest {
 //                )
 //        );
 
+//        List<String> links = new ArrayList<>(
+//                List.of(
+//                        "https://www.mgstore.az/motorola-razr-40-ultra-8-256gb-infinite-black",
+//                        "https://www.mgstore.az/blender-philips-hr1393-00-2-2058"
+//
+//                )
+//        );
+
+//        List<String> links = new ArrayList<>(
+//                List.of(
+//                        "https://kitabevim.az/m%C9%99hsul/akvarel-boya/",
+//                        "https://kitabevim.az/m%C9%99hsul/polo-uzun-askili-evrak-cantasi/",
+//                        "https://kitabevim.az/m%C9%99hsul/bts-1-telli-defter/"
+//
+//                )
+//        );
+
+//        List<String> links = new ArrayList<>(
+//                List.of(
+//                        "https://almali.az/m%C9%99hsul/sifarisl%c9%99-xiaomi-13t-8-256gb-5g-black/",
+//                        "https://almali.az/m%C9%99hsul/sifarisl%c9%99-sony-playstation-5-slim-1tb/"
+//                )
+//        );
+
         List<String> links = new ArrayList<>(
                 List.of(
-                        "https://www.mgstore.az/motorola-razr-40-ultra-8-256gb-infinite-black",
-                        "https://www.mgstore.az/blender-philips-hr1393-00-2-2058"
-
+                        "https://neptun.az/ankara-makaron-burgu-neptun-online-alisveris",
+                        "https://neptun.az/aguafresh-125ml-dis-macunu-otbelivanie-002472"
                 )
         );
-
-        LocalStore bakuE = LocalStoreCreator.creator(LocalStoreEnum.MGSTORE_AZ, links);
+        LocalStore bakuE = LocalStoreCreator.creator(LocalStoreEnum.NEPTUN_AZ, links);
 
 
         for(StoreResponseDto response: bakuE.response())

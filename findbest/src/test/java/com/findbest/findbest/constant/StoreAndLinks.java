@@ -91,6 +91,32 @@ public class StoreAndLinks {
                 )
         );
 
+        storeAndLinks.put(
+                LocalStoreEnum.KITABEVIM_AZ,
+                List.of(
+                        "https://kitabevim.az/m%C9%99hsul/akvarel-boya/",
+                        "https://kitabevim.az/m%C9%99hsul/polo-uzun-askili-evrak-cantasi/",
+                        "https://kitabevim.az/m%C9%99hsul/bts-1-telli-defter/"
+
+                )
+        );
+
+        storeAndLinks.put(
+                LocalStoreEnum.ALMALI_AZ,
+                List.of(
+                        "https://almali.az/m%C9%99hsul/sifarisl%c9%99-xiaomi-13t-8-256gb-5g-black/",
+                        "https://almali.az/m%C9%99hsul/sifarisl%c9%99-sony-playstation-5-slim-1tb/"
+                )
+        );
+
+        storeAndLinks.put(
+                LocalStoreEnum.NEPTUN_AZ,
+                List.of(
+                        "https://neptun.az/ankara-makaron-burgu-neptun-online-alisveris",
+                        "https://neptun.az/aguafresh-125ml-dis-macunu-otbelivanie-002472"
+                )
+        );
+
 
         return storeAndLinks;
     }
