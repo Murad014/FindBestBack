@@ -141,6 +141,22 @@ public class StoreAndLinks {
                 )
         );
 
+        storeAndLinks.put(
+            LocalStoreEnum.YVESROCHER_AZ,
+            List.of(
+                    "https://www.yvesrocher.az/products/28955",
+                    "https://www.yvesrocher.az/products/haircare-botanical-solutions-quru-v%C9%99-z%C9%99d%C9%99l%C9%99nmi%CC%87s-saclar-ucun-b%C9%99rpaedi%CC%87ci%CC%87-kondi%CC%87si%CC%87oner-200ml"
+            )
+        );
+
+        storeAndLinks.put(
+                LocalStoreEnum.UNITEDSPORT_AZ,
+                List.of(
+                        "https://unitedsport.az/tights-cas-f038-18932.html",
+                        "https://unitedsport.az/the-north-face-tanken-raglan-tee-21005.html"
+                )
+        );
+
         return storeAndLinks;
     }
 
