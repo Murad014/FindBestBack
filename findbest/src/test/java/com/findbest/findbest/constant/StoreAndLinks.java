@@ -181,6 +181,24 @@ public class StoreAndLinks {
                 )
         );
 
+        storeAndLinks.put(
+                LocalStoreEnum.SAATSTORE_AZ,
+                List.of(
+                        "https://saatstore.az/index.php?route=product/product&product_id=12641",
+                        "https://saatstore.az/index.php?route=product/product&product_id=12624"
+                )
+        );
+
+        storeAndLinks.put(
+                LocalStoreEnum.NOVELLA_AZ,
+                List.of(
+                        "https://novella.az/kitab/boyuk-dordluk",
+                        "https://novella.az/kitab/maliyyenin-esaslari"
+                )
+        );
+
+
+
         return storeAndLinks;
     }
 

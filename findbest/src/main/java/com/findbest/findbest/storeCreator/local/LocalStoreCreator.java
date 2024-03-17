@@ -77,6 +77,15 @@ public class LocalStoreCreator {
                 return new LifeSportAz(links);
             }
 
+            case SAATSTORE_AZ -> {
+                return new SaatStoreAz(links);
+            }
+
+
+            case NOVELLA_AZ -> {
+                return new NovellaAz(links);
+            }
+
         }
 
         throw new StoreNotFoundException(localStoreEnum.toString());
