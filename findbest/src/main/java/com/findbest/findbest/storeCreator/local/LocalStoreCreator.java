@@ -38,7 +38,15 @@ public class LocalStoreCreator {
             case MGSTORE_AZ -> {
                 return new MgStoreAz(links);
             }
-
+            case KITABEVIM_AZ -> {
+                return new KitabEvimAZ(links);
+            }
+            case ALMALI_AZ -> {
+                return new AlmaliAz(links);
+            }
+            case NEPTUN_AZ -> {
+                return new NeptunAz(links);
+            }
         }
 
         throw new StoreNotFoundException(localStoreEnum.toString());
