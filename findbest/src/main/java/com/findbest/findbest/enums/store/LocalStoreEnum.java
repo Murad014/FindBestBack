@@ -33,17 +33,11 @@ public enum LocalStoreEnum {
     LIFE_SPORT_AZ,
     SAATSTORE_AZ,
     NOVELLA_AZ,
-
-
-
-
-    val_cat,
     EMSAN_COM_AZ,
     EVIMIZSTORE_AZ,
-
-
     BIOTUS_AZ,
     MADEYRA_COM,
+
 
 
     DECORIA_AZ,
