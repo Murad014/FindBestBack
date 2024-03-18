@@ -102,6 +102,18 @@ public class LocalStoreCreator {
                 return new MadeyraCom(links);
             }
 
+            case DECORIA_AZ -> {
+                return new DecoriaAZ(links);
+            }
+
+            case LIBRAFF_AZ -> {
+                return new LibraffAz(links);
+            }
+
+            case OPTIMAL_AZ -> {
+                return new OptimalAz(links);
+            }
+
         }
 
         throw new StoreNotFoundException(localStoreEnum.toString());

@@ -144,7 +144,7 @@ public class StoreAndLinks {
         storeAndLinks.put(
             LocalStoreEnum.YVESROCHER_AZ,
             List.of(
-                    "https://www.yvesrocher.az/products/28955",
+//                    "https://www.yvesrocher.az/products/28955", -- Product Deleted
                     "https://www.yvesrocher.az/products/haircare-botanical-solutions-quru-v%C9%99-z%C9%99d%C9%99l%C9%99nmi%CC%87s-saclar-ucun-b%C9%99rpaedi%CC%87ci%CC%87-kondi%CC%87si%CC%87oner-200ml"
             )
         );
@@ -229,6 +229,29 @@ public class StoreAndLinks {
                 )
         );
 
+        storeAndLinks.put(
+                LocalStoreEnum.DECORIA_AZ,
+                List.of(
+                        "https://decoria.az/az/p/6668/bosch-su-filteri",
+                        "https://decoria.az/az/p/928447/dosekceli-rattan-sezlonq-195x65x32sm-042280230"
+                )
+        );
+
+        storeAndLinks.put(
+                LocalStoreEnum.LIBRAFF_AZ,
+                List.of(
+                        "https://www.libraff.az/kitab/bdii-dbiyyat/romanlar-and-novellalar/portaal-ba/",
+                        "https://www.libraff.az/aksiya/sara-dessen-set/"
+                )
+        );
+
+        storeAndLinks.put(
+                LocalStoreEnum.OPTIMAL_AZ,
+                List.of(
+                        "https://www.elitoptimal.az/Acer-Aspire-A315-59G-5283-NX-K6WER-008",
+                        "https://www.elitoptimal.az/Komputer-texnikasi/Komputer-ve-ofis-avadanliqlari/Sebeke-avadanliqlari/Hub-Defender-Quadro-Universal-USB-Black"
+                )
+        );
 
 
         return storeAndLinks;
