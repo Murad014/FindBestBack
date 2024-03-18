@@ -253,6 +253,22 @@ public class StoreAndLinks {
                 )
         );
 
+        storeAndLinks.put(
+                LocalStoreEnum.TEKERSTORE_AZ,
+                List.of(
+                        "https://tekerstore.az/teker-satisi/nexen-n-fera-su1-215-45-r17-91w",
+                        "https://tekerstore.az/teker-satisi/bridgestone-psport-265-40-r20-104y"
+                )
+        );
+
+        storeAndLinks.put(
+                LocalStoreEnum.PROTEINSHOP_AZ,
+                List.of(
+                        "https://proteinshop.az/products/lipo-6-black-ultra-concentrate-60caps",
+                        "https://proteinshop.az/products/gaspari-aminomax-8000-325tab"
+                )
+        );
+
 
         return storeAndLinks;
     }

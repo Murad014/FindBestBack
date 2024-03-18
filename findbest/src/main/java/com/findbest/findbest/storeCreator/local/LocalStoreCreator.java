@@ -114,6 +114,14 @@ public class LocalStoreCreator {
                 return new OptimalAz(links);
             }
 
+            case TEKERSTORE_AZ -> {
+                return new TekerStoreAz(links);
+            }
+
+            case PROTEINSHOP_AZ -> {
+                return new ProteinshopAz(links);
+            }
+
         }
 
         throw new StoreNotFoundException(localStoreEnum.toString());
