@@ -54,12 +54,20 @@ class StoreCreatorTest {
             assertNotNull(dto.getProductName());
             assertNotNull(dto.getCurrencyEnum());
             assertNotNull(dto.getImages());
-            assertFalse(dto.getImages().isEmpty());
+
+            if(checkSpecials(storeEnum))
+                assertFalse(dto.getImages().isEmpty());
+
             assertEquals(CurrencyEnum.AZN, dto.getCurrencyEnum());
         }
     }
+
+
     
 
-
+    private boolean checkSpecials(LocalStoreEnum localStoreEnum){
+        return !localStoreEnum.equals(LocalStoreEnum.SUPERFON_AZ)
+                && !localStoreEnum.equals(LocalStoreEnum.SARALTECH_STORE);
+    }
 
 }

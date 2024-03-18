@@ -245,16 +245,31 @@ public class MainTest {
 //                        "https://tekerstore.az/teker-satisi/bridgestone-psport-265-40-r20-104y"
 //                )
 //        );
+//
+//        List<String> links = new ArrayList<>(
+//                List.of(
+//                        "https://proteinshop.az/products/lipo-6-black-ultra-concentrate-60caps",
+//                        "https://proteinshop.az/products/gaspari-aminomax-8000-325tab"
+//                )
+//        );
+
+//        List<String> links = new ArrayList<>(
+//                List.of(
+//                        "https://www.superfon.az/az/products/hediyye-karti-50-azn-106022",
+//                        "https://www.superfon.az/az/products/simsiz-wireless-zengli-saat-103739",
+//                        "https://www.superfon.az/az/products/qulaqliq-bt-jokade-ji011-blue-106417"
+//                )
+//        );
 
         List<String> links = new ArrayList<>(
                 List.of(
-                        "https://proteinshop.az/products/lipo-6-black-ultra-concentrate-60caps",
-                        "https://proteinshop.az/products/gaspari-aminomax-8000-325tab"
+                        "https://www.saraltech.store/MF453dw",
+                        "https://www.saraltech.store/components/Anker-A8383"
                 )
         );
 
 
-        LocalStore bakuE = LocalStoreCreator.creator(LocalStoreEnum.PROTEINSHOP_AZ, links);
+        LocalStore bakuE = LocalStoreCreator.creator(LocalStoreEnum.SARALTECH_STORE, links);
 
 
         for(StoreResponseDto response: bakuE.response())
