@@ -122,6 +122,14 @@ public class LocalStoreCreator {
                 return new ProteinshopAz(links);
             }
 
+            case SUPERFON_AZ -> {
+                return new SuperfonAz(links);
+            }
+
+            case SARALTECH_STORE -> {
+                return new SaralTechStore(links);
+            }
+
         }
 
         throw new StoreNotFoundException(localStoreEnum.toString());

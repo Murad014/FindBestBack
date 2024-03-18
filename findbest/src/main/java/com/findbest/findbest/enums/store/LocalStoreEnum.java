@@ -42,12 +42,9 @@ public enum LocalStoreEnum {
     OPTIMAL_AZ,
     TEKERSTORE_AZ,
     PROTEINSHOP_AZ,
-
-
-
     SUPERFON_AZ,
     SARALTECH_STORE,
-    FITX_AZ,
+
 
 
 

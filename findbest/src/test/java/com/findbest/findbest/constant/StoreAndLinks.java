@@ -269,6 +269,22 @@ public class StoreAndLinks {
                 )
         );
 
+        storeAndLinks.put(
+                LocalStoreEnum.SUPERFON_AZ,
+                List.of(
+                        "https://www.superfon.az/az/products/hediyye-karti-50-azn-106022",
+                        "https://www.superfon.az/az/products/simsiz-wireless-zengli-saat-103739"
+                )
+        );
+
+        storeAndLinks.put(
+                LocalStoreEnum.SARALTECH_STORE,
+                List.of(
+                        "https://www.saraltech.store/MF453dw",
+                        "https://www.saraltech.store/components/Anker-A8383"
+                )
+        );
+
 
         return storeAndLinks;
     }
