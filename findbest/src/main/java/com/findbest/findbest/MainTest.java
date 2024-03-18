@@ -232,15 +232,29 @@ public class MainTest {
 //        );
 
 
+//        List<String> links = new ArrayList<>(
+//                List.of(
+//                        "https://www.elitoptimal.az/Acer-Aspire-A315-59G-5283-NX-K6WER-008",
+//                        "https://www.elitoptimal.az/Komputer-texnikasi/Komputer-ve-ofis-avadanliqlari/Sebeke-avadanliqlari/Hub-Defender-Quadro-Universal-USB-Black"
+//                )
+//        );
+
+//        List<String> links = new ArrayList<>(
+//                List.of(
+//                        "https://tekerstore.az/teker-satisi/nexen-n-fera-su1-215-45-r17-91w",
+//                        "https://tekerstore.az/teker-satisi/bridgestone-psport-265-40-r20-104y"
+//                )
+//        );
+
         List<String> links = new ArrayList<>(
                 List.of(
-                        "https://www.elitoptimal.az/Acer-Aspire-A315-59G-5283-NX-K6WER-008",
-                        "https://www.elitoptimal.az/Komputer-texnikasi/Komputer-ve-ofis-avadanliqlari/Sebeke-avadanliqlari/Hub-Defender-Quadro-Universal-USB-Black"
+                        "https://proteinshop.az/products/lipo-6-black-ultra-concentrate-60caps",
+                        "https://proteinshop.az/products/gaspari-aminomax-8000-325tab"
                 )
         );
 
 
-        LocalStore bakuE = LocalStoreCreator.creator(LocalStoreEnum.OPTIMAL_AZ, links);
+        LocalStore bakuE = LocalStoreCreator.creator(LocalStoreEnum.PROTEINSHOP_AZ, links);
 
 
         for(StoreResponseDto response: bakuE.response())

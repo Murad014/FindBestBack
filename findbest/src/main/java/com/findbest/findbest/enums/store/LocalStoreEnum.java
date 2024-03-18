@@ -8,7 +8,7 @@ public enum LocalStoreEnum {
 // SANTRAL_AZ -- Not render
 // SABAHFC_AZ, -- PRIVATE SITE
 // NEXT_COM_AZ, -- NOT LOCAL (AZERBAIJAN)
-
+// AZEXPORT_AZ -- RENDDER PROBLEM
 
 
     KONTAKT_AZ,
@@ -39,22 +39,16 @@ public enum LocalStoreEnum {
     MADEYRA_COM,
     DECORIA_AZ,
     LIBRAFF_AZ,
-
-
     OPTIMAL_AZ,
-
-
     TEKERSTORE_AZ,
-
-
-    AZEXPORT_AZ,
     PROTEINSHOP_AZ,
-    KINDCONGRESS_COM,
+
 
 
     SUPERFON_AZ,
     SARALTECH_STORE,
     FITX_AZ,
+
 
 
     AXCA_AZ,
