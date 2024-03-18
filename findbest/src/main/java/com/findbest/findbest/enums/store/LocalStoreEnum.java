@@ -37,16 +37,13 @@ public enum LocalStoreEnum {
     EVIMIZSTORE_AZ,
     BIOTUS_AZ,
     MADEYRA_COM,
-
-
-
     DECORIA_AZ,
-    BRENDSHOP_AZ,
     LIBRAFF_AZ,
 
 
-    MEGAAZ_COM,
     OPTIMAL_AZ,
+
+
     TEKERSTORE_AZ,
 
 

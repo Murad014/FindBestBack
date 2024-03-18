@@ -209,15 +209,38 @@ public class MainTest {
 //                )
 //        );
 
+//        List<String> links = new ArrayList<>(
+//                List.of(
+//                        "https://madeyra.com/index.php?route=product/product&product_id=835",
+//                        "https://madeyra.com/remi-yataq-desti"
+//                )
+//        );
+
+//        List<String> links = new ArrayList<>(
+//                List.of(
+//                        "https://decoria.az/az/p/6668/bosch-su-filteri",
+//                        "https://decoria.az/az/p/928447/dosekceli-rattan-sezlonq-195x65x32sm-042280230",
+//                        "https://decoria.az/az/p/16806/tort-standi-33sm-a12210000"
+//                )
+//        );
+
+//        List<String> links = new ArrayList<>(
+//                List.of(
+//                        "https://www.libraff.az/kitab/bdii-dbiyyat/romanlar-and-novellalar/portaal-ba/",
+//                        "https://www.libraff.az/aksiya/sara-dessen-set/"
+//                )
+//        );
+
+
         List<String> links = new ArrayList<>(
                 List.of(
-                        "https://madeyra.com/index.php?route=product/product&product_id=835",
-                        "https://madeyra.com/remi-yataq-desti"
+                        "https://www.elitoptimal.az/Acer-Aspire-A315-59G-5283-NX-K6WER-008",
+                        "https://www.elitoptimal.az/Komputer-texnikasi/Komputer-ve-ofis-avadanliqlari/Sebeke-avadanliqlari/Hub-Defender-Quadro-Universal-USB-Black"
                 )
         );
 
 
-        LocalStore bakuE = LocalStoreCreator.creator(LocalStoreEnum.MADEYRA_COM, links);
+        LocalStore bakuE = LocalStoreCreator.creator(LocalStoreEnum.OPTIMAL_AZ, links);
 
 
         for(StoreResponseDto response: bakuE.response())
