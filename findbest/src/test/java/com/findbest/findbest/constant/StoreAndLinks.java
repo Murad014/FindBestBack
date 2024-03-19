@@ -285,6 +285,22 @@ public class StoreAndLinks {
                 )
         );
 
+        storeAndLinks.put(
+                LocalStoreEnum.AXCA_AZ,
+                List.of(
+                        "https://axca.az/qiziloba-5-mertebeli-demir-laminant-ref",
+                        "https://axca.az/axca-taxta-dsmal-asqi-refi"
+                )
+        );
+
+        storeAndLinks.put(
+                LocalStoreEnum.TOPBRANDS_AZ,
+                List.of(
+                        "https://topbrands.az/14-870.html",
+                        "https://topbrands.az/baseus-c2-tozsoran.html"
+                )
+        );
+
 
         return storeAndLinks;
     }

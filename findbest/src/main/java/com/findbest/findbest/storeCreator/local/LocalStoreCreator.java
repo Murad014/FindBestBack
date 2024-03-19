@@ -130,6 +130,15 @@ public class LocalStoreCreator {
                 return new SaralTechStore(links);
             }
 
+            case AXCA_AZ -> {
+                return new AxcaAz(links);
+            }
+
+            case TOPBRANDS_AZ -> {
+                return new TopBrandsAz(links);
+            }
+
+
         }
 
         throw new StoreNotFoundException(localStoreEnum.toString());

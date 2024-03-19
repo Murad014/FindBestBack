@@ -261,15 +261,30 @@ public class MainTest {
 //                )
 //        );
 
+//        List<String> links = new ArrayList<>(
+//                List.of(
+//                        "https://www.saraltech.store/MF453dw",
+//                        "https://www.saraltech.store/components/Anker-A8383"
+//                )
+//        );
+
+//        List<String> links = new ArrayList<>(
+//                List.of(
+//                        "https://axca.az/qiziloba-5-mertebeli-demir-laminant-ref",
+//                        "https://axca.az/axca-taxta-dsmal-asqi-refi"
+//                )
+//        );
+
+
         List<String> links = new ArrayList<>(
                 List.of(
-                        "https://www.saraltech.store/MF453dw",
-                        "https://www.saraltech.store/components/Anker-A8383"
+                        "https://topbrands.az/14-870.html",
+                        "https://topbrands.az/baseus-c2-tozsoran.html"
                 )
         );
 
 
-        LocalStore bakuE = LocalStoreCreator.creator(LocalStoreEnum.SARALTECH_STORE, links);
+        LocalStore bakuE = LocalStoreCreator.creator(LocalStoreEnum.TOPBRANDS_AZ, links);
 
 
         for(StoreResponseDto response: bakuE.response())
