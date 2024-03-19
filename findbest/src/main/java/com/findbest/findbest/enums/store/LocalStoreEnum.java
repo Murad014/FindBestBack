@@ -44,13 +44,8 @@ public enum LocalStoreEnum {
     PROTEINSHOP_AZ,
     SUPERFON_AZ,
     SARALTECH_STORE,
-
-
-
-
     AXCA_AZ,
     TOPBRANDS_AZ,
-    SAVALAN_AZ,
 
 
     AVON_AZ,
