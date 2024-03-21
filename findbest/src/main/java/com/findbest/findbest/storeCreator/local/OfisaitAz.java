@@ -19,16 +19,14 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
-public class OmidAz extends LocalStore{
+public class OfisaitAz extends LocalStore{
 
-    private static final String BASE_URL = "https://omid.az/";
     private final List<String> links;
     private final List<StoreResponseDto> responseDtoList = new ArrayList<>();
 
-    private final static String PRICE_ELEMENT_KEY = "div.catalog-element-price-discount";
-    private final static String DISCOUNT_PRICE_ELEMENT_KEY = "div.catalog-element-price-discount span";
-    private final static String PRODUCT_NAME_ELEMENT_KEY = "h1.omid-header";
-    private final static String PRODUCT_PICTURE_KEY = "a.catalog-element-gallery-picture";
+    private final static String PRICE_ELEMENT_KEY = "div.product-price";
+    private final static String PRODUCT_NAME_ELEMENT_KEY = "h1.page-title span";
+    private final static String PRODUCT_PICTURE_KEY = "div.product-left div div div div div img";
 
     private TrustManager[] trustAllCertificates = new TrustManager[]{
             new X509TrustManager() {
@@ -43,8 +41,8 @@ public class OmidAz extends LocalStore{
     };
 
 
-    public OmidAz(List<String> links){
-        super("OmidAz");
+    public OfisaitAz(List<String> links){
+        super("OfisaitAz");
         this.links = List.copyOf(links);
 
         try {
@@ -54,6 +52,7 @@ public class OmidAz extends LocalStore{
         } catch (Exception e) {
             throw new RuntimeException(e);
         }
+
 
         getInformationAndSet();
     }
@@ -65,7 +64,6 @@ public class OmidAz extends LocalStore{
     }
 
     private void getInformationAndSet(){
-
         links.forEach(link -> {
             try {
                 Document doc = Jsoup.connect(link).get();
@@ -93,28 +91,21 @@ public class OmidAz extends LocalStore{
         Elements links = doc.select(PRODUCT_PICTURE_KEY);
         Set<String> hrefList = new HashSet<>();
         for (Element srcLink : links) {
-            String href = srcLink.attr("href");
-            hrefList.add(BASE_URL.concat(href));
+            String href = srcLink.attr("src");
+            hrefList.add(href);
+            break;
         }
 
         return hrefList;
     }
 
     private String getPriceElement(Document doc, String link){
-        Element discountPriceElement = doc.selectFirst(DISCOUNT_PRICE_ELEMENT_KEY);
-        if(discountPriceElement != null)
-            return discountPriceElement.text()
-                    .replace("₼", "")
-                    .trim();
-
         Element priceElement = doc.selectFirst(PRICE_ELEMENT_KEY);
+
         if(priceElement == null)
             throw new FieldNotFoundInStoreHTMLException(link, STORE_NAME, "price");
 
-        return priceElement.text()
-                .trim()
-                .replace("₼", "")
-                .trim();
+        return priceElement.text().replace("m", "").trim();
     }
 
     private String getProductNameElement(Document doc, String link){
@@ -127,4 +118,7 @@ public class OmidAz extends LocalStore{
 
 
 //    END - Helper METHODS
+
+
+
 }

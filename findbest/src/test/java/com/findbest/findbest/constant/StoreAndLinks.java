@@ -301,6 +301,184 @@ public class StoreAndLinks {
                 )
         );
 
+        storeAndLinks.put(
+                LocalStoreEnum.ALIN_AZ,
+                List.of(
+                        "https://alin.az/interer/podsvechniki/amdan-keramika-kpnk-mix-11h11h11-sm/",
+                        "https://alin.az/aksessuary/protivoskolzyaschie-shipy-mini-koshki/"
+                )
+        );
+
+        storeAndLinks.put(
+                LocalStoreEnum.AYBAX_COM,
+                List.of(
+                        "https://www.aybax.com/az-az/m%C9%99hsul/%C3%87%C9%99hray%C4%B1-%C5%9Firinliyin-%C9%99ks-etm%C9%99si---G%C3%BCl-buketi-4120",
+                        "https://www.aybax.com/az-az/m%C9%99hsul/G%C3%B6z%C9%99l-r%C9%99ngl%C9%99r---Qutuda-g%C3%BCll%C9%99r-3771"
+                )
+        );
+
+        storeAndLinks.put(
+                LocalStoreEnum.TIMSPORT_AZ,
+                List.of(
+                        "https://timsport.az/az/diger-fitnes-avadanliqlari/barmaqlar-ucun-idman-yamagi-19808-rs/3378",
+                        "https://timsport.az/az/diger-fitnes-avadanliqlari/ariqladici-kemer-joerex-8383/3377"
+                )
+        );
+
+        storeAndLinks.put(
+                LocalStoreEnum.ARIZON_AZ,
+                List.of(
+                        "https://www.arizon.az/az/product/723/220v-portativ-elektrikli-popcorn-aparati-sokany-rh-288-masaustu-mini-popcorn-aparati",
+                        "https://www.arizon.az/az/product/2243/beden-ucun-masaj-aleti-coxfunksiyali-boyun-bel-ayaq-masaj-aleti"
+                )
+        );
+
+        storeAndLinks.put(
+                LocalStoreEnum.BUTALI_AZ,
+                List.of(
+                        "https://butali.az/en/the-nar-collection/174-ring-from-the-nar-collection.html",
+                        "https://butali.az/en/the-mugham-collection/61-230-ring-from-the-mugham-collection.html#/8-enamel_color-white/23-product_color-gilding"
+                )
+        );
+
+        storeAndLinks.put(
+                LocalStoreEnum.DINO_AZ,
+                List.of(
+                        "https://dino.az/mehsul/ur%c9%99kli-3-lu-d%c9%99st/",
+                        "https://dino.az/mehsul/klassik-d%c9%99st-14/"
+                )
+        );
+
+        storeAndLinks.put(
+                LocalStoreEnum.VOLKSSPORT_AZ,
+                List.of(
+                        "https://volkssport.az/az/ana-s%C9%99hif%C9%99/2240-venum-elite-boxing-gloves-vn1392-535.html",
+                        "https://volkssport.az/az/dest-kostyum/1396-adidas-entry-fm6569.html"
+                )
+        );
+
+        storeAndLinks.put(
+                LocalStoreEnum.USEL_AZ,
+                List.of(
+                        "https://usel.az/harri-potter-portmone-platform-9-3-4.html",
+                        "https://usel.az/harri-potter-ron-uizli-sehirli-cubugu.html"
+                )
+        );
+
+
+        storeAndLinks.put(
+                LocalStoreEnum.REALBUY_AZ,
+                List.of(
+                        "https://realbuy.az/mehsul-soyuducu-indesit-itf118-x-1510.html",
+                        "https://realbuy.az/mehsul-usaq-arabasi-teknum-512--1816.html"
+                )
+        );
+
+        storeAndLinks.put(
+                LocalStoreEnum.OFISAIT_AZ,
+                List.of(
+                        "https://ofisait.az/mektebli_levazimati_3/chanta_m_i_5710_qirmizi",
+                        "https://ofisait.az/meishet_texnikasi_2/chaynik_q_5810_elektrik_17_l_"
+                )
+        );
+
+        storeAndLinks.put(
+                LocalStoreEnum.HAMISIBURADA_AZ,
+                List.of(
+                        "https://hamisiburada.az/product/klaviatura-defender-doom-keeper-gk-100d1-wired-gaming-keyboard-45100-TkHwdd",
+                        "https://hamisiburada.az/product/agilli-saat-smart-119-plus-lnnZW3"
+                )
+        );
+
+        storeAndLinks.put(
+                LocalStoreEnum.SUPREMEBEL_AZ,
+                List.of(
+                        "https://supremebel.az/rento/",
+                        "https://supremebel.az/laminat/"
+                )
+        );
+
+        storeAndLinks.put(
+                LocalStoreEnum.ERAELECTRONICS_AZ,
+                List.of(
+                        "https://eraelectronics.az/meiset-texnikasi/stasionar-texnika/qurashdirilan-pliteler/bishirme-paneli-bosch-pcs7a5m90-serie-6-bakida-serfeli-al/",
+                        "https://eraelectronics.az/televizor-ve-audio-sistem/televizorlar-bakida-ucuz-satis/toshiba-smart-4k-televizorlari-baku/4k-uhd-qled-televizor-85-smart-tv-toshiba-85m550le-kupit-v-baku/"
+                )
+        );
+
+        storeAndLinks.put(
+                LocalStoreEnum.ASANGUL_COM,
+                List.of(
+                        "https://asangul.com/1790/",
+                        "https://asangul.com/1677/"
+                )
+        );
+
+        storeAndLinks.put(
+                LocalStoreEnum.ANTARIS_AZ,
+                List.of(
+                        "https://antaris.az/m%C9%99hsul/r%c9%99hb%c9%99r-kreslosu-t-995-black/",
+                        "https://antaris.az/m%C9%99hsul/avtomobil-dpb70-color-shifters-hot-wheels/"
+                )
+        );
+
+        storeAndLinks.put(
+                LocalStoreEnum.GALLERY_AZ,
+                List.of(
+                        "https://gallery.az/product/gull%c9%99r/okeanin-ur%c9%99yi/",
+                        "https://gallery.az/product/hediyye/stolustu-saat-oak/"
+                )
+        );
+
+        storeAndLinks.put(
+                LocalStoreEnum.BONPOPPY_AZ,
+                List.of(
+                        "https://bonpoppy.az/product/musiqili-oyr%c9%99dici-kitab-puppies-home-6ay/",
+                        "https://bonpoppy.az/product/babyono-elektrik-dos-pompasi-pico/"
+                )
+        );
+
+        storeAndLinks.put(
+                LocalStoreEnum.YUMROO_AZ,
+                List.of(
+                        "https://yumroo.az/az/umnyie-chasyi-xiaomi-amazfit-gts-pink-black-gold-bakida-almaq-qiymet-baku-kupit",
+                        "https://yumroo.az/az/smartfon-samsung-galaxy-s21fe-6gb-128gb-lte-gray-green-violet-bakida-almaq-qiymet-baku-kupit"
+                )
+        );
+
+        storeAndLinks.put(
+                LocalStoreEnum.CINARYAYIMLARI_COM,
+                List.of(
+                        "https://cinaryayimlari.com/book/diqqet-ve-zeka-3-4-yas-bagca-usaqlari-ucun-vesait",
+                        "https://cinaryayimlari.com/book/men-mentiq-oyrenirem-4-5-yas-bagca-usaqlari-ucun-vesait"
+                )
+        );
+
+        storeAndLinks.put(
+                LocalStoreEnum.ALSEVIN_AZ,
+                List.of(
+                        "https://alsevin.az/carolina-herrera-good-girl-l-80-edp.html",
+                        "https://alsevin.az/narciso-rodriguez-for-her-l-absolu-l-100edp.html"
+                )
+        );
+
+        storeAndLinks.put(
+                LocalStoreEnum.DUAL_AZ,
+                List.of(
+                        "https://www.dual.az/iphone-15-pro-128gb",
+                        "https://www.dual.az/hobbi-ve-eylence/sony-playstation-4-controller"
+                )
+        );
+
+        storeAndLinks.put(
+                LocalStoreEnum.LEKAL_AZ,
+                List.of(
+                        "https://lekal.az/index.php?route=product/product&product_id=25403",
+                        "https://lekal.az/index.php?route=product/product&product_id=23665"
+                )
+        );
+
+
 
         return storeAndLinks;
     }
