@@ -138,6 +138,94 @@ public class LocalStoreCreator {
                 return new TopBrandsAz(links);
             }
 
+            case ALIN_AZ -> {
+                return new AlinAz(links);
+            }
+
+            case AYBAX_COM -> {
+                return new AybaxCom(links);
+            }
+
+            case TIMSPORT_AZ -> {
+                return new TimsportAz(links);
+            }
+
+            case ARIZON_AZ -> {
+                return new ArizonAz(links);
+            }
+
+            case BUTALI_AZ -> {
+                return new ButaliAz(links);
+            }
+
+            case DINO_AZ -> {
+                return new DinoAz(links);
+            }
+
+            case VOLKSSPORT_AZ -> {
+                return new VolkssportAz(links);
+            }
+
+            case USEL_AZ -> {
+                return new UselAz(links);
+            }
+
+            case REALBUY_AZ -> {
+                return new RealBuyAz(links);
+            }
+
+            case OFISAIT_AZ -> {
+                return new OfisaitAz(links);
+            }
+
+            case HAMISIBURADA_AZ -> {
+                return new HamisiburadaAz(links);
+            }
+
+            case SUPREMEBEL_AZ -> {
+                return new SupremebelAz(links);
+            }
+
+            case ERAELECTRONICS_AZ -> {
+                return new EraelectronicsAz(links);
+            }
+
+            case ASANGUL_COM -> {
+                return new AsangulCom(links);
+            }
+
+            case ANTARIS_AZ -> {
+                return new AntarisAz(links);
+            }
+
+            case GALLERY_AZ -> {
+                return new GalleryAz(links);
+            }
+
+            case BONPOPPY_AZ -> {
+                return new BonpoppyAz(links);
+            }
+
+            case YUMROO_AZ -> {
+                return new YumrooAz(links);
+            }
+
+            case CINARYAYIMLARI_COM -> {
+                return new CinarYayimlariAz(links);
+            }
+
+            case ALSEVIN_AZ -> {
+                return new AlsevinAz(links);
+            }
+
+            case DUAL_AZ -> {
+                return new DualAz(links);
+            }
+
+            case LEKAL_AZ -> {
+                return new LekalAz(links);
+            }
+
 
         }
 

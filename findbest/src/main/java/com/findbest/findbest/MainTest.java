@@ -276,15 +276,28 @@ public class MainTest {
 //        );
 
 
+//        List<String> links = new ArrayList<>(
+//                List.of(
+//                        "https://topbrands.az/14-870.html",
+//                        "https://topbrands.az/baseus-c2-tozsoran.html"
+//                )
+//        );
+
+//        List<String> links = new ArrayList<>(
+//                List.of(
+//                        "https://avon.az/product/makeup/makeup-lips/makeup-lips-gloss/9999916"
+//                )
+//        );
+
         List<String> links = new ArrayList<>(
                 List.of(
-                        "https://topbrands.az/14-870.html",
-                        "https://topbrands.az/baseus-c2-tozsoran.html"
+                        "https://lekal.az/index.php?route=product/product&product_id=25403",
+                        "https://lekal.az/index.php?route=product/product&product_id=23665"
                 )
         );
 
 
-        LocalStore bakuE = LocalStoreCreator.creator(LocalStoreEnum.TOPBRANDS_AZ, links);
+        LocalStore bakuE = LocalStoreCreator.creator(LocalStoreEnum.LEKAL_AZ, links);
 
 
         for(StoreResponseDto response: bakuE.response())

@@ -9,7 +9,7 @@ public enum LocalStoreEnum {
 // SABAHFC_AZ, -- PRIVATE SITE
 // NEXT_COM_AZ, -- NOT LOCAL (AZERBAIJAN)
 // AZEXPORT_AZ -- RENDDER PROBLEM
-
+// LINEX_AZ -- Does not work
 
     KONTAKT_AZ,
     BAKUELECTRONICS_AZ,
@@ -46,71 +46,30 @@ public enum LocalStoreEnum {
     SARALTECH_STORE,
     AXCA_AZ,
     TOPBRANDS_AZ,
-
-
-    AVON_AZ,
-    CITYTOURSBAKU_COM,
-    LINEX_AZ,
-
-
     ALIN_AZ,
     AYBAX_COM,
-    KOMBILER_AZ,
-
-
-    MYBOSTAN_COM,
     TIMSPORT_AZ,
     ARIZON_AZ,
-
-
     BUTALI_AZ,
-    GPS_AZ,
-    MEYSARIWINES_AZ,
-
-
-    BESTSHOP_AZ,
     DINO_AZ,
     VOLKSSPORT_AZ,
-
-
-    AZERIAMLAK_AZ,
-    SHARGMOTORS_COM,
     USEL_AZ,
-
-
     REALBUY_AZ,
     OFISAIT_AZ,
     HAMISIBURADA_AZ,
-
-
     SUPREMEBEL_AZ,
     ERAELECTRONICS_AZ,
     ASANGUL_COM,
-
-
-    UNCADR_COM,
-    SUNEX_AZ,
-    ROYAL_AZ,
-
-
-    CARHIREBAKU_COM,
     ANTARIS_AZ,
-    PIZZA_AZ,
-
-
     GALLERY_AZ,
-    OURHOST_AZ,
     BONPOPPY_AZ,
-
-
-    CASPIANBARREL_ORG,
     YUMROO_AZ,
     CINARYAYIMLARI_COM,
+    ALSEVIN_AZ,
+    DUAL_AZ,
 
 
-    NBATECH_AZ,
-    ALSEVIN_AZ
-
+    LEKAL_AZ,
 
 }
 
