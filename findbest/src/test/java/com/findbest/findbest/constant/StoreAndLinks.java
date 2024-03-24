@@ -478,6 +478,24 @@ public class StoreAndLinks {
                 )
         );
 
+        storeAndLinks.put(
+                LocalStoreEnum.QANUN_AZ,
+                List.of("https://www.qanun.az/amerika-tanrilari-2132")
+        );
+
+        storeAndLinks.put(
+                LocalStoreEnum.BOOKMART_AZ,
+                List.of(
+                        "https://bookmart.az/product/vuqar-bileceri-qerib-xeyal/",
+                        "https://bookmart.az/product/bencamin-spoll-maykl-ksander-ugurlu-insanlar-gune-nece-baslayir/")
+        );
+
+        storeAndLinks.put(
+                LocalStoreEnum.IRSHAD_AZ,
+                List.of("https://irshad.az/mehsullar/honor-x9b-12-gb-256-gb-midnight-black",
+                        "https://irshad.az/mehsullar/xiaomi-redmi-note-13-8-gb-256-gb-midnight-black")
+        );
+
 
 
         return storeAndLinks;

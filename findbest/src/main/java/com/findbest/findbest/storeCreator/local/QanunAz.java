@@ -1,6 +1,5 @@
 package com.findbest.findbest.storeCreator.local;
 
-
 import com.findbest.findbest.enums.store.CurrencyEnum;
 import com.findbest.findbest.exceptions.FieldNotFoundInStoreHTMLException;
 import com.findbest.findbest.models.StoreResponseDto;
@@ -15,37 +14,42 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
-public class MaxiAz extends LocalStore {
+public class QanunAz extends LocalStore {
     private final List<String> links;
     private final List<StoreResponseDto> responseDtoList = new ArrayList<>();
 
-    private final static String PRICE_ELEMENT_KEY = "div.product-detail__price .price-manat";
-    private final static String PRODUCT_NAME_ELEMENT_KEY = "meta[property=og:title]";
-    private final static String PRODUCT_PICTURE_KEY = "a.gallery__main-link";
+    private final static String PRICE_ELEMENT_KEY = "div.new p.item-price span";
+    private final static String PRODUCT_NAME_ELEMENT_KEY = "div.d-flex div h1.title";
+    private final static String PRODUCT_PICTURE_KEY = "div.container div.row div div.item-img-bg img";
 
 
 
-    public MaxiAz(List<String> links){
-        super("MaxiAz");
+    public QanunAz(List<String> links){
+        super("QanunAz");
         this.links = List.copyOf(links);
         getInformationAndSet();
+    }
+
+
+    @Override
+    public List<StoreResponseDto> response() {
+        return responseDtoList;
     }
 
     private void getInformationAndSet(){
         links.forEach(link -> {
             try {
                 Document doc = Jsoup.connect(link).get();
-
                 String getProductName = getProductNameElement(doc, link);
                 String getPriceElement = getPriceElement(doc, link);
-                Set<String> getProductImages = getProductImages(doc, link);
+                Set<String> getPictures = getProductImages(doc, link);
 
                 StoreResponseDto responseDto = setResponseDto(
                         link,
                         getPriceElement,
                         getProductName,
                         CurrencyEnum.AZN,
-                        getProductImages
+                        getPictures
                 );
                 responseDtoList.add(responseDto);
 
@@ -55,25 +59,16 @@ public class MaxiAz extends LocalStore {
         });
     }
 
-
-    @Override
-    public List<StoreResponseDto> response() {
-        return responseDtoList;
-    }
-
-
-
     //    Helper METHODS
-    private Set<String> getProductImages(Document doc, String link) {;
+    private Set<String> getProductImages(Document doc, String link) {
         Elements links = doc.select(PRODUCT_PICTURE_KEY);
-        Set<String> srcList = new HashSet<>();
-
+        Set<String> hrefList = new HashSet<>();
         for (Element srcLink : links) {
-            String src = srcLink.select("img").attr("src");
-            srcList.add(src);
+            String href = srcLink.attr("data-src");
+            hrefList.add(href);
         }
 
-        return srcList;
+        return hrefList;
     }
 
     private String getPriceElement(Document doc, String link){
@@ -81,7 +76,7 @@ public class MaxiAz extends LocalStore {
         if(priceElement == null)
             throw new FieldNotFoundInStoreHTMLException(link, STORE_NAME, "price");
 
-        return priceElement.text().trim().split(" ")[0];
+        return priceElement.text();
     }
 
     private String getProductNameElement(Document doc, String link){
@@ -92,7 +87,6 @@ public class MaxiAz extends LocalStore {
         return productNameElement.text().trim();
     }
 
-
-
 //    END - Helper METHODS
+
 }

@@ -13,7 +13,8 @@ import java.util.HashMap;
 public class SearchResultsModel {
     private HashMap<String, String> relevantHeaders;
     private String jsonResponse;
-    public SearchResultsModel(HashMap<String, String> headers, String json) {
+    public SearchResultsModel(HashMap<String, String> headers,
+                              String json) {
         relevantHeaders = headers;
         jsonResponse = json;
     }
