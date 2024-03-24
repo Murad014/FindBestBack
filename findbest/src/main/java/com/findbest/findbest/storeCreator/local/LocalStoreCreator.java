@@ -226,7 +226,16 @@ public class LocalStoreCreator {
                 return new LekalAz(links);
             }
 
+            case QANUN_AZ -> {
+                return new QanunAz(links);
+            }
 
+            case BOOKMART_AZ -> {
+                return new BookMartAz(links);
+            }
+            case IRSHAD_AZ -> {
+                return new IrshadAz(links);
+            }
         }
 
         throw new StoreNotFoundException(localStoreEnum.toString());
